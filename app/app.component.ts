@@ -2,6 +2,17 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'my-app',
-  template: `<h1>Hello {{name}}</h1>`,
+  template: `<app-title [subtitle]="subtitle"></app-title>
+  <employee-form></employee-form>
+  `
 })
-export class AppComponent  { name = 'Angular'; }
+export class AppComponent  { 
+
+  constructor() {
+    console.log("LOG from app.component")
+  }  
+  name = 'Angular'; 
+  subtitle = '(V1)';
+
+
+}
