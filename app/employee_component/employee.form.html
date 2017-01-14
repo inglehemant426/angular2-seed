@@ -7,6 +7,7 @@
         <input type="text" class="form-control" id="id" [(ngModel)]="model.id" name="id" required #spy>
         <i>CLass change when we interact with control :</i> {{spy.className}}
       </div>
+     
       <div class="form-group">
         <label for="name">Name</label>
         <input type="text" class="form-control" id="name" required [(ngModel)]="model.name" name="name" #name="ngModel">
@@ -16,7 +17,7 @@
         </div>
       </div>
     <div class="form-group">
-        <label for="designation">Hero Power</label>
+        <label for="designation">Designation</label>
         <select class="form-control" id="designation" required [(ngModel)]="model.designation" name="designation">
             <option *ngFor="let designation of designations" [value]="designation">{{designation}}</option>
         </select>

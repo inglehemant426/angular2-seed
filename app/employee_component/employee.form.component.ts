@@ -28,6 +28,7 @@ export class EmployeeFormComponent {
     submitted = false;
     onSubmit(form:NgForm) {
         this.submitted = true;
+       // alert("inn");
         console.log("employeeForm : ",form);
         console.log("employeeForm Details : ",form.value);
         this.employeeData.push(form.value);
